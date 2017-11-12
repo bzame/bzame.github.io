@@ -3,3 +3,38 @@
 html, body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
+
+.resume-block {
+	border-left-style: solid; /* #0077B5; */
+	border-left-width: 3px;
+	padding-left: 15px;
+	margin-bottom: 50px;
+}
+
+summary.resume {
+    display: block;
+}
+
+.education {
+	border-left-color: #6CDFF1;
+}
+
+.experience {
+	border-left-color: #FA4485;
+}
+
+.awards {
+	border-left-color: #FDA333;
+}
+
+.extra {
+	border-left-color: #C1E05F;
+}
+
+.skills {
+	border-left-color: #D2A4F8;
+}
+
+.interests {
+	border-left-color: #BF7F3F;
+}
