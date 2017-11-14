@@ -15,26 +15,52 @@ summary.resume {
     display: block;
 }
 
+.cv {
+	text-transform: uppercase;
+}
+
+.cv-header {
+	color: inherit; /* #212529 */
+}
+
 .education {
-	border-left-color: #6CDFF1;
+	border-left-color: #34A853;
+}
+.cv-education {
+	color: #34A853;
 }
 
 .experience {
-	border-left-color: #FA4485;
+	border-left-color: #4285F4;
+}
+.cv-experience {
+	color: #4285F4;
 }
 
 .awards {
-	border-left-color: #FDA333;
+	border-left-color: #FBBC05;
+}
+.cv-awards {
+	color: #FBBC05;
 }
 
 .extra {
-	border-left-color: #C1E05F;
+	border-left-color: #EA4335;
+}
+.cv-extra {
+	color: #EA4335;
 }
 
 .skills {
-	border-left-color: #D2A4F8;
+	border-left-color: #C5C5A0;
+}
+.cv-skills {
+	color: #C5C5A0;
 }
 
 .interests {
 	border-left-color: #BF7F3F;
+}
+.cv-interests {
+	color: #BF7F3F;
 }
