@@ -49,12 +49,12 @@
         <section class="jumbotron" style="background-color: #f7f7f7;">
             <div class="container" style="max-width: 1140px;">
                 <div class="row">
-                    <div class="column-md-12 resume-block education">
-                        <h2 id="education"> <span class="cv cv-education">Edu</span>cation</h2>
-                        <div class="row">
+                    <div class="column-md-12 resume-block education full-length">
+                        <h2 class="cv-collapse-header" id="education" data-toggle="collapse" data-target="#education-graduate-master, #education-graduate-bachelor, #education-ungraduate"> <span class="cv cv-education">Edu</span>cation<i class="fa fa-ellipsis-v cv-education" aria-hidden="true" style="float: right;"></i></h2>
+                        <div class="row collapse" id="education-graduate-master">
 	                        <div class="column-md-11 offset-md-1 resume-block education">
 	                            <summary class="resume">
-	                                <h3 id="education-graduate-master">
+	                                <h3>
 	                                    <a href="http://www.stat.unipd.it/en" target="_blank" class="cv-header">Master Degree in Statistical Science, IT Curricula</a>
 	                                </h3>
 	                                <p>
@@ -85,10 +85,10 @@
 	                            </detail>
 	                        </div>
                         </div>
-                        <div class="row">
+                        <div class="row collapse" id="education-graduate-bachelor">
 	                        <div class="column-md-11 offset-md-1 resume-block education">
 	                            <summary class="resume">
-	                                <h3 id="education-graduate-bachelor">
+	                                <h3>
 	                                    <a href="http://www.stat.unipd.it/en" target="_blank" class="cv-header">Three-year Degree in Statistics and IT</a>
 	                                </h3>
 	                                <p>
@@ -119,10 +119,10 @@
 	                            </detail>
 	                        </div>
                         </div>
-                        <div class="row">
+                        <div class="row collapse" id="education-ungraduate">
 	                        <div class="column-md-11 offset-md-1 resume-block education">
 	                            <summary class="resume">
-	                                <h3 id="education-ungraduate">
+	                                <h3>
 	                                    <a href="http://www.itiszuccante.gov.it/" target="_blank" class="cv-header">Undergraduate Diploma as IT Expert</a>
 	                                </h3>
 	                                <p>
@@ -145,11 +145,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="column-md-12 resume-block experience">
-                        <h2 id="experience"><span class="cv cv-experience">Exp</span>erience</h2>
-                        <div class="row">
+                    <div class="column-md-12 resume-block experience full-length">
+                        <h2 class="cv-collapse-header" id="experience" data-toggle="collapse" data-target="#experience-fulltime, #experience-parttime"><span class="cv cv-experience">Exp</span>erience<i class="fa fa-ellipsis-v cv-experience" aria-hidden="true" style="float: right;"></i></h2>
+                        <div class="row collapse" id="experience-fulltime">
 	                        <div class="column-md-11 offset-md-1 resume-block experience">
-                                <h3 id="experience-fulltime">
+                                <h3>
                                     Full Time
                                 </h3>
                                 <div class="row">
@@ -175,9 +175,9 @@
                                 </div>
 	                        </div>
                         </div>
-                        <div class="row">
+                        <div class="row collapse" id="experience-parttime">
 	                        <div class="column-md-11 offset-md-1 resume-block experience">
-                                <h3 id="experience-parttime">
+                                <h3>
                                     Part Time
                                 </h3>
                                 <div class="row">
@@ -200,12 +200,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="column-md-12 resume-block awards">
-                        <h2 id="awards"><span class="cv cv-awards">Awa</span>rds</h2>
-                        <div class="row">
+                    <div class="column-md-12 resume-block awards full-length">
+                        <h2 class="cv-collapse-header" id="awards" data-toggle="collapse" data-target="#awards-fce, #awards-pet, #awards-eycc"><span class="cv cv-awards">Awa</span>rds<i class="fa fa-ellipsis-v cv-awards" aria-hidden="true" style="float: right;"></i></h2>
+                        <div class="row collapse" id="awards-fce">
 	                        <div class="column-md-11 offset-md-1 resume-block awards">
 	                            <summary class="resume">
-	                                <h3 id="awards-fce">
+	                                <h3>
 	                                    <a href="http://www.cambridgeenglish.org/exams-and-tests/first/" target="_blank" class="cv-header">First Certificate of English</a>
 	                                </h3>
 	                            </summary>
@@ -217,10 +217,10 @@
 	                            </detail>
 	                        </div>
                         </div>
-                        <div class="row">
+                        <div class="row collapse" id="awards-pet">
                             <div class="column-md-11 offset-md-1 resume-block awards">
                                 <summary class="resume">
-                                    <h3 id="awards-pet">
+                                    <h3>
                                         <a href="http://www.cambridgeenglish.org/exams-and-tests/preliminary/" target="_blank" class="cv-header">Preliminary English Test</a>
                                     </h3>
                                 </summary>
@@ -232,10 +232,10 @@
                                 </detail>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row collapse" id="awards-eycc">
                             <div class="column-md-11 offset-md-1 resume-block awards">
                                 <summary class="resume">
-                                    <h3 id="awards-eycc">
+                                    <h3>
                                         XIX European Young Chess Championship
                                     </h3>
                                 </summary>
@@ -250,9 +250,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="column-md-12 resume-block extra">
-                        <h2><span class="cv cv-extra">Ext</span>ra</h2>
-                        <div class="row">
+                    <div class="column-md-12 resume-block extra full-length">
+                        <h2 class="cv-collapse-header" id="extra" data-toggle="collapse" data-target="#extra-colombo"><span class="cv cv-extra">Ext</span>ra<i class="fa fa-ellipsis-v cv-extra" aria-hidden="true" style="float: right;"></i></h2>
+                        <div class="row collapse" id="extra-colombo">
 	                        <div class="column-md-11 offset-md-1 resume-block extra">
 	                            <summary class="resume">
 	                                <h3>
@@ -271,9 +271,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="column-md-12 resume-block skills">
-                        <h2><span class="cv cv-skills">IT S</span>kills</h2>
-                        <div class="row">
+                    <div class="column-md-12 resume-block skills full-length">
+                        <h2 class="cv-collapse-header" id="it-skills" data-toggle="collapse" data-target="#it-statistics, #it-db, #it-coding, #it-web, #it-office, #it-visual-insights"><span class="cv cv-skills">IT S</span>kills<i class="fa fa-ellipsis-v cv-skills" aria-hidden="true" style="float: right;"></i></h2>
+                        <div class="row collapse" id="it-statistics">
                             <div class="column-md-11 offset-md-1 resume-block skills">
                                 <summary class="resume">
                                     <h3>
@@ -285,7 +285,7 @@
                                 </detail>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row collapse" id="it-db">
                             <div class="column-md-11 offset-md-1 resume-block skills">
                                 <summary class="resume">
                                     <h3>
@@ -297,7 +297,7 @@
                                 </detail>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row collapse" id="it-coding">
                             <div class="column-md-11 offset-md-1 resume-block skills">
                                 <summary class="resume">
                                     <h3>
@@ -309,7 +309,7 @@
                                 </detail>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row collapse" id="it-web">
                             <div class="column-md-11 offset-md-1 resume-block skills">
                                 <summary class="resume">
                                     <h3>
@@ -321,7 +321,7 @@
                                 </detail>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row collapse" id="it-office">
                             <div class="column-md-11 offset-md-1 resume-block skills">
                                 <summary class="resume">
                                     <h3>
@@ -333,7 +333,7 @@
                                 </detail>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row collapse" id="it-visual-insights">
                             <div class="column-md-11 offset-md-1 resume-block skills">
                                 <summary class="resume">
                                     <h3>
@@ -347,38 +347,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="column-md-12 resume-block interests">
-                        <h2><span class="cv cv-interests">Int</span>erests</h2>
-                        <div class="row">
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="column-md-12 resume-block interests full-length">
+                        <h2 class="cv-collapse-header" id="interests" data-toggle="collapse" data-target="#interests-professional, #interests-personal"><span class="cv cv-interests">Int</span>erests<i class="fa fa-ellipsis-v cv-interests" aria-hidden="true" style="float: right;"></i></h2>
+                        <div class="row collapse" id="interests-professional">
                             <div class="column-md-11 offset-md-1 resume-block interests">
-                                <h3>
-                                    Interests
-                                </h3>
-		                        <div class="row">
-		                            <div class="column-md-11 offset-md-1 resume-block interests">
-		                                <summary class="resume">
-		                                    <h3>
-		                                        Professional
-		                                    </h3>
-		                                </summary>
-		                                <detail>
-		                                    data mining, data analysis, statistics, java coding, web design, web app creation, software design
-		                                </detail>
-		                            </div>
-		                        </div>
-                                <div class="row">
-                                    <div class="column-md-11 offset-md-1 resume-block interests">
-                                        <summary class="resume">
-                                            <h3>
-                                                Personal
-                                            </h3>
-                                        </summary>
-                                        <detail>
-                                            chess, book-reading(historical, detective and fantasy romances and popular-science books mainly), history, math, swimming
-                                        </detail>
-                                    </div>
-                                </div>
+                                <summary class="resume">
+                                    <h3>
+                                        Professional
+                                    </h3>
+                                </summary>
+                                <detail>
+                                    data mining, data analysis, statistics, java coding, web design, web app creation, software design
+                                </detail>
+                            </div>
+                        </div>
+                        <div class="row collapse" id="interests-personal">
+                            <div class="column-md-11 offset-md-1 resume-block interests">
+                                <summary class="resume">
+                                    <h3>
+                                        Personal
+                                    </h3>
+                                </summary>
+                                <detail>
+                                    chess, book-reading(historical, detective and fantasy romances and popular-science books mainly), history, math, swimming
+                                </detail>
                             </div>
                         </div>
                     </div>

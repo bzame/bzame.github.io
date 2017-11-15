@@ -4,11 +4,20 @@ html, body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+footer {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
 .resume-block {
 	border-left-style: solid; /* #0077B5; */
 	border-left-width: 3px;
 	padding-left: 15px;
 	margin-bottom: 50px;
+}
+
+.full-length {
+	width: 100%;
 }
 
 summary.resume {
@@ -21,6 +30,12 @@ summary.resume {
 
 .cv-header {
 	color: inherit; /* #212529 */
+}
+
+.cv-collapse-header {
+	display: block;
+	width: 100%;
+	cursor: pointer;
 }
 
 .education {
@@ -52,10 +67,10 @@ summary.resume {
 }
 
 .skills {
-	border-left-color: #C5C5A0;
+	border-left-color: #8600C8;
 }
 .cv-skills {
-	color: #C5C5A0;
+	color: #8600C8;
 }
 
 .interests {
