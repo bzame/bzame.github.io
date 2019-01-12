@@ -12,7 +12,8 @@
     <title>Bruno Zamengo</title>
     
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 <!--      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
@@ -26,16 +27,12 @@
 </head>
 
 <body>
-    <header class="masthead clearfix">
-        <div class="inner">
-            <nav class="nav nav-masthead">
-                <a class="nav-link " href="/">Home</a>
-                <a class="nav-link active" href="">My CV</a>
-                <a class="nav-link " href="project.html">Projects</a>
+    <nav class="nav nav-masthead fixed-top bg-light">
+        <a class="nav-link " href="/">Home</a>
+        <a class="nav-link active" href="#">My CV</a>
+        <a class="nav-link " href="project.html">Projects</a>
 <!--                 <a class="nav-link" href="#">Contact</a> -->
-            </nav>
-        </div>
-    </header>
+    </nav>
     <main role="main">
         <section class="jumbotron text-center">
             <div class="container">
@@ -50,7 +47,7 @@
             <div class="container" style="max-width: 1140px;">
                 <div class="row">
                     <div class="column-md-12 resume-block education full-length">
-                        <h2 class="cv-collapse-header" id="education" data-toggle="collapse" data-target="#education-graduate-master, #education-graduate-bachelor, #education-ungraduate"> <span class="cv cv-education">Edu</span>cation<i class="fa fa-ellipsis-v cv-education" aria-hidden="true" style="float: right;"></i></h2>
+                        <h2 class="cv-collapse-header" id="education" data-toggle="collapse" data-target="#education-graduate-master, #education-graduate-bachelor, #education-ungraduate"> <span class="cv cv-education">Edu</span>cation<i class="fas fa-ellipsis-v cv-education" aria-hidden="true" style="float: right;"></i></h2>
                         <div class="row collapse" id="education-graduate-master">
 	                        <div class="column-md-11 offset-md-1 resume-block education">
 	                            <summary class="resume">
@@ -146,7 +143,7 @@
                 </div>
                 <div class="row">
                     <div class="column-md-12 resume-block experience full-length">
-                        <h2 class="cv-collapse-header" id="experience" data-toggle="collapse" data-target="#experience-fulltime, #experience-parttime"><span class="cv cv-experience">Exp</span>erience<i class="fa fa-ellipsis-v cv-experience" aria-hidden="true" style="float: right;"></i></h2>
+                        <h2 class="cv-collapse-header" id="experience" data-toggle="collapse" data-target="#experience-fulltime, #experience-parttime"><span class="cv cv-experience">Exp</span>erience<i class="fas fa-ellipsis-v cv-experience" aria-hidden="true" style="float: right;"></i></h2>
                         <div class="row collapse" id="experience-fulltime">
 	                        <div class="column-md-11 offset-md-1 resume-block experience">
                                 <h3>
@@ -155,11 +152,34 @@
                                 <div class="row">
                                     <div class="column-md-11 offset-md-1 resume-block experience">
                                         <summary class="resume">
+                                            <h4><a href="http://www.motionanalytica.com/" target="_blank", class="cv-header">Motion Analytica</a></h4>
+                                        </summary>
+                                        <detail>
+                                           <dd>
+                                               <dl>2018-today</dl>
+                                               <dl>Udine</dl>
+                                               <dl>Data Scientist</dl> 
+                                               <dl>
+                                                   <ul>
+                                                       <li>Customer interaction management, from requirement collection to product delivery.</li>
+                                                       <li>Project timeline design.</li>
+                                                       <li>Design and implementation of algorithms to get insights of people and things in motion from mobile phone network data.</li>
+                                                       <li>Visual insights design and implementation.</li>
+                                                       <li>Discussion of final results with the customer.</li>
+                                                   </ul>
+                                               </dl>
+                                           </dd>
+                                        </detail>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column-md-11 offset-md-1 resume-block experience">
+                                        <summary class="resume">
                                             <h4><a href="http://www.gruppopam.it/" target="_blank", class="cv-header">Gruppo PAM</a></h4>
                                         </summary>
                                         <detail>
                                            <dd>
-                                               <dl>2015-today</dl>
+                                               <dl>2015-2018</dl>
                                                <dl>Venice</dl>
                                                <dl>Customer Analyst</dl> 
                                                <dl>
@@ -201,7 +221,7 @@
                 </div>
                 <div class="row">
                     <div class="column-md-12 resume-block awards full-length">
-                        <h2 class="cv-collapse-header" id="awards" data-toggle="collapse" data-target="#awards-fce, #awards-pet, #awards-eycc"><span class="cv cv-awards">Awa</span>rds<i class="fa fa-ellipsis-v cv-awards" aria-hidden="true" style="float: right;"></i></h2>
+                        <h2 class="cv-collapse-header" id="awards" data-toggle="collapse" data-target="#awards-fce, #awards-pet, #awards-eycc"><span class="cv cv-awards">Awa</span>rds<i class="fas fa-ellipsis-v cv-awards" aria-hidden="true" style="float: right;"></i></h2>
                         <div class="row collapse" id="awards-fce">
 	                        <div class="column-md-11 offset-md-1 resume-block awards">
 	                            <summary class="resume">
@@ -251,7 +271,7 @@
                 </div>
                 <div class="row">
                     <div class="column-md-12 resume-block extra full-length">
-                        <h2 class="cv-collapse-header" id="extra" data-toggle="collapse" data-target="#extra-colombo"><span class="cv cv-extra">Ext</span>ra<i class="fa fa-ellipsis-v cv-extra" aria-hidden="true" style="float: right;"></i></h2>
+                        <h2 class="cv-collapse-header" id="extra" data-toggle="collapse" data-target="#extra-colombo"><span class="cv cv-extra">Ext</span>ra<i class="fas fa-ellipsis-v cv-extra" aria-hidden="true" style="float: right;"></i></h2>
                         <div class="row collapse" id="extra-colombo">
 	                        <div class="column-md-11 offset-md-1 resume-block extra">
 	                            <summary class="resume">
@@ -272,7 +292,7 @@
                 </div>
                 <div class="row">
                     <div class="column-md-12 resume-block skills full-length">
-                        <h2 class="cv-collapse-header" id="it-skills" data-toggle="collapse" data-target="#it-statistics, #it-db, #it-coding, #it-web, #it-office, #it-visual-insights"><span class="cv cv-skills">IT S</span>kills<i class="fa fa-ellipsis-v cv-skills" aria-hidden="true" style="float: right;"></i></h2>
+                        <h2 class="cv-collapse-header" id="it-skills" data-toggle="collapse" data-target="#it-statistics, #it-db, #it-coding, #it-web, #it-office, #it-visual-insights"><span class="cv cv-skills">IT S</span>kills<i class="fas fa-ellipsis-v cv-skills" aria-hidden="true" style="float: right;"></i></h2>
                         <div class="row collapse" id="it-statistics">
                             <div class="column-md-11 offset-md-1 resume-block skills">
                                 <summary class="resume">
@@ -297,6 +317,18 @@
                                 </detail>
                             </div>
                         </div>
+                        <div class="row collapse" id="it-visual-insights">
+                            <div class="column-md-11 offset-md-1 resume-block skills">
+                                <summary class="resume">
+                                    <h3>
+                                        Visual Insights
+                                    </h3>
+                                </summary>
+                                <detail>
+                                    Good with Tableau Desktop (report/dashboard design); Good at Microstrategy usage (dashboard/reportdesign) and development (attribute, facts, metrics etc. mapping)
+                                </detail>
+                            </div>
+                        </div>
                         <div class="row collapse" id="it-coding">
                             <div class="column-md-11 offset-md-1 resume-block skills">
                                 <summary class="resume">
@@ -306,6 +338,18 @@
                                 </summary>
                                 <detail>
                                     Good at Java coding; Basic knowledge of C/C++
+                                </detail>
+                            </div>
+                        </div>
+                        <div class="row collapse" id="it-coding">
+                            <div class="column-md-11 offset-md-1 resume-block skills">
+                                <summary class="resume">
+                                    <h3>
+                                        Geoinformatics
+                                    </h3>
+                                </summary>
+                                <detail>
+                                    Good with QGis; Good at Postgis, Oracle Spatial usage
                                 </detail>
                             </div>
                         </div>
@@ -333,23 +377,11 @@
                                 </detail>
                             </div>
                         </div>
-                        <div class="row collapse" id="it-visual-insights">
-                            <div class="column-md-11 offset-md-1 resume-block skills">
-                                <summary class="resume">
-                                    <h3>
-                                        Visual Insights
-                                    </h3>
-                                </summary>
-                                <detail>
-                                    Good at Microstrategy usage (dashboard/reportdesign) and development (attribute, facts, metrics etc. mapping)
-                                </detail>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="row" style="margin-bottom: 20px;">
                     <div class="column-md-12 resume-block interests full-length">
-                        <h2 class="cv-collapse-header" id="interests" data-toggle="collapse" data-target="#interests-professional, #interests-personal"><span class="cv cv-interests">Int</span>erests<i class="fa fa-ellipsis-v cv-interests" aria-hidden="true" style="float: right;"></i></h2>
+                        <h2 class="cv-collapse-header" id="interests" data-toggle="collapse" data-target="#interests-professional, #interests-personal"><span class="cv cv-interests">Int</span>erests<i class="fas fa-ellipsis-v cv-interests" aria-hidden="true" style="float: right;"></i></h2>
                         <div class="row collapse" id="interests-professional">
                             <div class="column-md-11 offset-md-1 resume-block interests">
                                 <summary class="resume">

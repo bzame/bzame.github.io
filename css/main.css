@@ -9,6 +9,16 @@ footer {
 	padding-bottom: 1rem;
 }
 
+
+.nav-link {
+	/* text-decoration: underline; */
+	border-bottom: 2px solid transparent;
+}
+.active {
+    /* text-decoration: none; */
+    border-bottom: 2px solid #007bff;
+}
+
 .resume-block {
 	border-left-style: solid; /* #0077B5; */
 	border-left-width: 3px;
