@@ -70,17 +70,17 @@ summary.resume {
 }
 
 .extra {
-	border-left-color: #EA4335;
+	border-left-color: #8600C8;
 }
 .cv-extra {
-	color: #EA4335;
+	color: #8600C8;
 }
 
 .skills {
-	border-left-color: #8600C8;
+	border-left-color: #EA4335; 
 }
 .cv-skills {
-	color: #8600C8;
+	color: #EA4335;
 }
 
 .interests {

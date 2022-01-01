@@ -9,6 +9,10 @@ a:hover {
   color: #fff;
 }
 
+a.home {
+  color: #05e6d6;
+}
+
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
