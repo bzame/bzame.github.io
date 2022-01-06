@@ -18,12 +18,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 <!--      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
     <!-- Custom styles for this template -->
-    <link href="css/album.css" rel="stylesheet">
+    <link href="css/skills.css" rel="stylesheet">
     <!--Roboto Condensed font import -->
     <style>
 	@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 	</style>
     <link href="css/main.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- d3js + wordcloud -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+    <script>
+        function toggleSkillsDisplayStyle() {
+            var d = $(".skills_displayed");
+            var h = $(".skills_hidden");
+            $(d).removeClass("skills_displayed");
+            $(d).addClass("skills_hidden");
+            $(h).removeClass("skills_hidden");
+            $(h).addClass("skills_displayed");
+        }
+    </script>
 </head>
 
 <body>
@@ -46,12 +62,53 @@
         </section>
         
         <section class="jumbotron" style="background-color: #f7f7f7;">
-            <div class="container" style="max-width: 1140px;">
+            <div class="container" style="max-width: 60vw;">
                 <div class="row">
                     <div class="column-md-12 resume-block skills full-length">
-                        <h2 class="cv-collapse-header" id="it-skills" data-toggle="collapse" data-target="#soft, #it-statistics, #it-db, #it-coding, #it-cloud, #it-web, #it-office, #it-visual-insights"><span class="cv cv-skills">SKI</span>lls<i class="fas fa-ellipsis-v cv-skills" aria-hidden="true" style="float: right;"></i></h2>
+                        <h2 class="cv-collapse-header" id="it-skills" data-toggle="collapse" data-target="#skills_display, #soft, #it-statistics, #it-db, #it-coding, #it-cloud, #it-web, #it-office, #it-visual-insights, #word_cloud"><span class="cv cv-skills">SKI</span>lls<i class="fas fa-ellipsis-v cv-skills" aria-hidden="true" style="float: right;"></i></h2>
+                        <div class="row collapse" id="skills_display">
+                            <div class="column-md-11 offset-md-1 ">
+                                <p class="fa-lg skills_displayed" style="margin: 1vw; cursor: pointer;" id="skills_list" data-toggle="collapse" onclick="toggleSkillsDisplayStyle()">
+                                    <i class="fas fa-toggle-on"></i> Switch to classic list
+                                </p>
+                                <p class="fa-lg skills_hidden" style="margin: 1vw; cursor: pointer;" id="skills_word_cloud" data-toggle="collapse"  onclick="toggleSkillsDisplayStyle()">
+                                    <i class="fas fa-toggle-off"></i> Switch to word cloud
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row collapse" id="word_cloud">
+                            <div class="column-md-11 offset-md-1 resume-block skills skills_displayed">
+                                <div id="skills_cloud" class="svg-container">
+<svg id="svg_skills" preserveAspectRatio="xMinYMin meet" viewBox="0 0 800 600" class="svg-content"><g transform="translate(400,300)"><text style="font-family: Impact; font-size: 66px;" text-anchor="middle" font-size="1" class="skill_item_statistics" transform="translate(40,12)">Descriptive Stats</text><text style="font-family: Impact; font-size: 66px;" text-anchor="middle" font-size="1" class="skill_item_db" transform="translate(180,78)">pl/SQL</text><text style="font-family: Impact; font-size: 66px;" text-anchor="middle" font-size="1" class="skill_item_office" transform="translate(-26,-84)">Excel</text><text style="font-family: Impact; font-size: 59px;" text-anchor="middle" font-size="1" class="skill_item_db" transform="translate(-84,145),rotate(90)">DB design</text><text style="font-family: Impact; font-size: 53px;" text-anchor="middle" font-size="1" class="skill_item_statistics" transform="translate(-189,85)">R</text><text style="font-family: Impact; font-size: 53px;" text-anchor="middle" font-size="1" class="skill_item_dataviz" transform="translate(162,138)">Tableau Desktop</text><text style="font-family: Impact; font-size: 53px;" text-anchor="middle" font-size="1" class="skill_item_gis" transform="translate(-143,115),rotate(90)">PostGis</text><text style="font-family: Impact; font-size: 53px;" text-anchor="middle" font-size="1" class="skill_item_office" transform="translate(284,-3),rotate(90)">Outlook</text><text style="font-family: Impact; font-size: 53px;" text-anchor="middle" font-size="1" class="skill_item_office" transform="translate(213,-107),rotate(90)">Word</text><text style="font-family: Impact; font-size: 53px;" text-anchor="middle" font-size="1" class="skill_item_office" transform="translate(-253,84),rotate(90)">PowerPoint</text><text style="font-family: Impact; font-size: 46px;" text-anchor="middle" font-size="1" class="skill_item_db" transform="translate(64,-132),rotate(90)">Postgres</text><text style="font-family: Impact; font-size: 46px;" text-anchor="middle" font-size="1" class="skill_item_db" transform="translate(-144,-109),rotate(90)">Oracle</text><text style="font-family: Impact; font-size: 40px;" text-anchor="middle" font-size="1" class="skill_item_statistics" transform="translate(55,-231)">Data Mining</text><text style="font-family: Impact; font-size: 40px;" text-anchor="middle" font-size="1" class="skill_item_db" transform="translate(-23,-169)">pyspark</text><text style="font-family: Impact; font-size: 40px;" text-anchor="middle" font-size="1" class="skill_item_gis" transform="translate(181,-179)">QGis</text><text style="font-family: Impact; font-size: 40px;" text-anchor="middle" font-size="1" class="skill_item_gis" transform="translate(155,183)">Oracle Spatial</text><text style="font-family: Impact; font-size: 33px;" text-anchor="middle" font-size="1" class="skill_item_cloud" transform="translate(221,-224)">AWS S3</text><text style="font-family: Impact; font-size: 33px;" text-anchor="middle" font-size="1" class="skill_item_coding" transform="translate(-187,-107),rotate(90)">python</text><text style="font-family: Impact; font-size: 33px;" text-anchor="middle" font-size="1" class="skill_item_coding" transform="translate(165,-121)">svn</text><text style="font-family: Impact; font-size: 33px;" text-anchor="middle" font-size="1" class="skill_item_etl" transform="translate(-201,-186)">Tableau Prep</text><text style="font-family: Impact; font-size: 30px;" text-anchor="middle" font-size="1" class="skill_item_statistics" transform="translate(118,231),rotate(90)">AI/ML</text><text style="font-family: Impact; font-size: 26px;" text-anchor="middle" font-size="1" class="skill_item_dataviz" transform="translate(9,65)">Shiny</text><text style="font-family: Impact; font-size: 26px;" text-anchor="middle" font-size="1" class="skill_item_statistics" transform="translate(-126,-246)">RMarkdown</text><text style="font-family: Impact; font-size: 26px;" text-anchor="middle" font-size="1" class="skill_item_statistics" transform="translate(-286,-105),rotate(90)">Time Series</text><text style="font-family: Impact; font-size: 26px;" text-anchor="middle" font-size="1" class="skill_item_dataviz" transform="translate(359,89),rotate(90)">Microstrategy</text><text style="font-family: Impact; font-size: 26px;" text-anchor="middle" font-size="1" class="skill_item_cloud" transform="translate(-166,256)">AWS lambda</text><text style="font-family: Impact; font-size: 26px;" text-anchor="middle" font-size="1" class="skill_item_cloud" transform="translate(341,-53),rotate(90)">AWS RDS</text><text style="font-family: Impact; font-size: 26px;" text-anchor="middle" font-size="1" class="skill_item_coding" transform="translate(-4,176),rotate(90)">java</text><text style="font-family: Impact; font-size: 26px;" text-anchor="middle" font-size="1" class="skill_item_office" transform="translate(298,-206),rotate(90)">Power Automate</text><text style="font-family: Impact; font-size: 26px;" text-anchor="middle" font-size="1" class="skill_item_etl" transform="translate(-4,230),rotate(90)">DAX</text><text style="font-family: Impact; font-size: 26px;" text-anchor="middle" font-size="1" class="skill_item_etl" transform="translate(-288,94),rotate(90)">Talend</text><text style="font-family: Impact; font-size: 20px;" text-anchor="middle" font-size="1" class="skill_item_dataviz" transform="translate(8,-57)">PowerBI</text><text style="font-family: Impact; font-size: 20px;" text-anchor="middle" font-size="1" class="skill_item_cloud" transform="translate(-300,-15)">AWS IAM</text><text style="font-family: Impact; font-size: 20px;" text-anchor="middle" font-size="1" class="skill_item_coding" transform="translate(66,63),rotate(90)">git</text><text style="font-family: Impact; font-size: 20px;" text-anchor="middle" font-size="1" class="skill_item_office" transform="translate(168,-67)">LaTex</text><text style="font-family: Impact; font-size: 13px;" text-anchor="middle" font-size="1" class="skill_item_dataviz" transform="translate(-168,105)">d3.js</text><text style="font-family: Impact; font-size: 13px;" text-anchor="middle" font-size="1" class="skill_item_web" transform="translate(43,30)">HTML</text><text style="font-family: Impact; font-size: 13px;" text-anchor="middle" font-size="1" class="skill_item_web" transform="translate(-301,42)">javascript</text><text style="font-family: Impact; font-size: 13px;" text-anchor="middle" font-size="1" class="skill_item_web" transform="translate(-207,-62)">css</text><text style="font-family: Impact; font-size: 13px;" text-anchor="middle" font-size="1" class="skill_item_etl" transform="translate(-69,-52)">Penthao</text><text style="font-family: Impact; font-size: 13px;" text-anchor="middle" font-size="1" class="skill_item_etl" transform="translate(-5,-147)">Kafka</text></g></svg>
+                                
+                                </div>
+                                <div id="skills_legend">
+                                    <button class="skills_legend skill_item_db        " onclick="fade(this)">Data Handling       </button>
+                                    <button class="skills_legend skill_item_statistics" onclick="fade(this)">Statistics          </button>
+                                    <button class="skills_legend skill_item_dataviz   " onclick="fade(this)">dataviz             </button>
+                                    <button class="skills_legend skill_item_coding    " onclick="fade(this)">Coding              </button>
+                                    <button class="skills_legend skill_item_office    " onclick="fade(this)">Office              </button>
+                                    <button class="skills_legend skill_item_gis       " onclick="fade(this)">GIS                 </button>
+                                    <button class="skills_legend skill_item_cloud     " onclick="fade(this)">Cloud Technology    </button>
+                                    <button class="skills_legend skill_item_etl       " onclick="fade(this)">ETL                 </button>
+                                    <button class="skills_legend skill_item_web       " onclick="fade(this)">Web Editing         </button>
+                                    <!-- <button class="skills_legend skill_item_gen_class2" onclick="fade(this)">gen_class2          </button> -->
+                                    <!-- <button class="skills_legend skill_item_gen_class3" onclick="fade(this)">gen_class3          </button> -->
+                                    <!-- <button class="skills_legend skill_item_gen_class4" onclick="fade(this)">gen_class4          </button> -->
+                                    <!-- <button class="skills_legend skill_item_gen_class5" onclick="fade(this)">gen_class5          </button> -->
+                                    <!-- <button class="skills_legend skill_item_gen_class6" onclick="fade(this)">gen_class6          </button> -->
+                                    <!-- <button class="skills_legend skill_item_gen_class7" onclick="fade(this)">gen_class7          </button> -->
+                                    <!-- <button class="skills_legend skill_item_gen_class8" onclick="fade(this)">gen_class8          </button> -->
+                                    <!-- <button class="skills_legend skill_item_gen_class9" onclick="fade(this)">gen_class9          </button> -->
+                                    <!-- <button class="skills_legend skill_item_gen_classA" onclick="fade(this)">gen_classA          </button> -->
+                                    <!-- <button class="skills_legend skill_item_gen_classB" onclick="fade(this)">gen_classB          </button> -->
+                                    <!-- <button class="skills_legend skill_item_gen_classC" onclick="fade(this)">gen_classC          </button> -->
+                                </div>
+                                <script src="js/skills_word_cloud.js"></script>
+                            </div>
+                        </div>
                         <div class="row collapse" id="soft">
-                            <div class="column-md-11 offset-md-1 resume-block skills">
+                            <div class="column-md-11 offset-md-1 resume-block skills skills_hidden">
                                 <summary class="resume">
                                     <h3>
                                         Soft Skills
@@ -63,7 +120,7 @@
                             </div>
                         </div>
                         <div class="row collapse" id="it-statistics">
-                            <div class="column-md-11 offset-md-1 resume-block skills">
+                            <div class="column-md-11 offset-md-1 resume-block skills skills_hidden">
                                 <summary class="resume">
                                     <h3>
                                         Statistics
@@ -75,7 +132,7 @@
                             </div>
                         </div>
                         <div class="row collapse" id="it-db">
-                            <div class="column-md-11 offset-md-1 resume-block skills">
+                            <div class="column-md-11 offset-md-1 resume-block skills skills_hidden">
                                 <summary class="resume">
                                     <h3>
                                         Database
@@ -87,7 +144,7 @@
                             </div>
                         </div>
                         <div class="row collapse" id="it-visual-insights">
-                            <div class="column-md-11 offset-md-1 resume-block skills">
+                            <div class="column-md-11 offset-md-1 resume-block skills skills_hidden">
                                 <summary class="resume">
                                     <h3>
                                         Visual Insights
@@ -99,7 +156,7 @@
                             </div>
                         </div>
                         <div class="row collapse" id="it-cloud">
-                            <div class="column-md-11 offset-md-1 resume-block skills">
+                            <div class="column-md-11 offset-md-1 resume-block skills skills_hidden">
                                 <summary class="resume">
                                     <h3>
                                         Cloud Technologies
@@ -111,7 +168,7 @@
                             </div>
                         </div>
                         <div class="row collapse" id="it-coding">
-                            <div class="column-md-11 offset-md-1 resume-block skills">
+                            <div class="column-md-11 offset-md-1 resume-block skills skills_hidden">
                                 <summary class="resume">
                                     <h3>
                                         Coding
@@ -123,7 +180,7 @@
                             </div>
                         </div>
                         <div class="row collapse" id="it-coding">
-                            <div class="column-md-11 offset-md-1 resume-block skills">
+                            <div class="column-md-11 offset-md-1 resume-block skills skills_hidden">
                                 <summary class="resume">
                                     <h3>
                                         Geoinformatics
@@ -135,7 +192,7 @@
                             </div>
                         </div>
                         <div class="row collapse" id="it-web">
-                            <div class="column-md-11 offset-md-1 resume-block skills">
+                            <div class="column-md-11 offset-md-1 resume-block skills skills_hidden">
                                 <summary class="resume">
                                     <h3>
                                         Web editing
@@ -147,7 +204,7 @@
                             </div>
                         </div>
                         <div class="row collapse" id="it-office">
-                            <div class="column-md-11 offset-md-1 resume-block skills">
+                            <div class="column-md-11 offset-md-1 resume-block skills skills_hidden">
                                 <summary class="resume">
                                     <h3>
                                         Office

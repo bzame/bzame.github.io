@@ -1,0 +1,132 @@
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    padding-bottom: 60%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content {
+    font-family: Roboto;
+    font-size: 1vw;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* palette source:  https://materialui.co/flatuicolors/ */
+.skill_item_cloud      { /* Turquoise     */ background-color: #1ABC9C; color: #10715E; fill: #1ABC9C; }
+.skill_item_dataviz    { /* Emerland      */ background-color: #2ECC71; color: #1C7A44; fill: #2ECC71; }
+.skill_item_office     { /* Peterriver    */ background-color: #3498DB; color: #185D8A; fill: #3498DB; }
+.skill_item_gen_class1 { /* Amethyst      */ background-color: #9B59B6; color: #C8A4D7; fill: #9B59B6; }
+.skill_item_db         { /* Wetasphalt    */ background-color: #34495E; color: #6B88A6; fill: #34495E; }
+.skill_item_web        { /* Greensea      */ background-color: #16A085; color: #1FE0BA; fill: #16A085; }
+.skill_item_gen_class4 { /* Nephritis     */ background-color: #27AE60; color: #52D88B; fill: #27AE60; }
+.skill_item_gen_class5 { /* Belizehole    */ background-color: #2980B9; color: #61ABDC; fill: #2980B9; }
+.skill_item_coding     { /* Wisteria      */ background-color: #8E44AD; color: #B883CE; fill: #8E44AD; }
+.skill_item_gen_class1 { /* Midnightblue  */ background-color: #2C3E50; color: #3E5770; fill: #2C3E50; }
+.skill_item_etl        { /* Sunflower     */ background-color: #F1C40F; color: #917608; fill: #F1C40F; }
+.skill_item_gis        { /* Carrot        */ background-color: #E67E22; color: #8E4B10; fill: #E67E22; }
+.skill_item_statistics { /* Alizarin      */ background-color: #E74C3C; color: #F4ABA4; fill: #E74C3C; }
+.skill_item_gen_class7 { /* Clouds        */ background-color: #ECF0F1; color: #7E99A0; fill: #ECF0F1; }
+.skill_item_gen_class8 { /* Concrete      */ background-color: #95A5A6; color: #566667; fill: #95A5A6; }
+.skill_item_gen_class9 { /* Orange        */ background-color: #F39C12; color: #955E08; fill: #F39C12; }
+.skill_item_gen_classA { /* Pumpkin       */ background-color: #D35400; color: #FF7E28; fill: #D35400; }
+.skill_item_gen_classB { /* Pomegranate   */ background-color: #C0392B; color: #DE766B; fill: #C0392B; }
+.skill_item_gen_classC { /* Silver        */ background-color: #BDC3C7; color: #6B767E; fill: #BDC3C7; }
+.skill_item_gen_classD { /* Asbestos      */ background-color: #7F8C8D; color: #4C5455; fill: #7F8C8D; }
+
+button.skills_legend {
+    display: inline-block;
+    float: left;
+    padding: 0.75vw;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.opaque {
+    opacity: 0.5;
+}
+
+
+
+.skills_displayed {
+}
+
+.skills_hidden {
+    display: none;
+}
+
+
+
+.resume-block {
+	border-left-style: solid; /* #0077B5; */
+	border-left-width: 3px;
+	padding-left: 15px;
+	margin-bottom: 50px;
+}
+
+
+summary.resume {
+    display: block;
+}
+
+.cv {
+	text-transform: uppercase;
+}
+
+.cv-header {
+	color: inherit; /* #212529 */
+}
+
+.cv-collapse-header {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+
+.education {
+	border-left-color: #34A853;
+}
+.cv-education {
+	color: #34A853;
+}
+
+.experience {
+	border-left-color: #4285F4;
+}
+.cv-experience {
+	color: #4285F4;
+}
+
+.awards {
+	border-left-color: #FBBC05;
+}
+.cv-awards {
+	color: #FBBC05;
+}
+
+.extra {
+	border-left-color: #8600C8;
+}
+.cv-extra {
+	color: #8600C8;
+}
+
+.skills {
+	border-left-color: #EA4335; 
+}
+.cv-skills {
+	color: #EA4335;
+}
+
+.interests {
+	border-left-color: #BF7F3F;
+}
+.cv-interests {
+	color: #BF7F3F;
+}

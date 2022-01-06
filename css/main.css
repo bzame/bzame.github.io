@@ -19,73 +19,50 @@ footer {
     border-bottom: 2px solid #007bff;
 }
 
-.resume-block {
-	border-left-style: solid; /* #0077B5; */
-	border-left-width: 3px;
-	padding-left: 15px;
-	margin-bottom: 50px;
-}
+
 
 .full-length {
 	width: 100%;
 }
 
-summary.resume {
-    display: block;
+
+
+.navbar {
+  margin-bottom: 0;
 }
 
-.cv {
-	text-transform: uppercase;
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
 }
 
-.cv-header {
-	color: inherit; /* #212529 */
+.jumbotron p:last-child {
+  margin-bottom: 0;
 }
 
-.cv-collapse-header {
-	display: block;
-	width: 100%;
-	cursor: pointer;
+.jumbotron-heading {
+  font-weight: 300;
 }
 
-.education {
-	border-left-color: #34A853;
-}
-.cv-education {
-	color: #34A853;
+.jumbotron .container {
+  max-width: 40rem;
 }
 
-.experience {
-	border-left-color: #4285F4;
-}
-.cv-experience {
-	color: #4285F4;
-}
-
-.awards {
-	border-left-color: #FBBC05;
-}
-.cv-awards {
-	color: #FBBC05;
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
 }
 
-.extra {
-	border-left-color: #8600C8;
-}
-.cv-extra {
-	color: #8600C8;
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.skills {
-	border-left-color: #EA4335; 
-}
-.cv-skills {
-	color: #EA4335;
-}
-
-.interests {
-	border-left-color: #BF7F3F;
-}
-.cv-interests {
-	color: #BF7F3F;
+footer p {
+  margin-bottom: .25rem;
 }
