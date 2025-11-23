@@ -1,0 +1,60 @@
+.publications-section {
+  background: #f7f7f7; /* matches your album background */
+  padding: 3rem 0 4rem;
+}
+
+.publications-container {
+  max-width: 900px;
+}
+
+.pub-item {
+  padding: 1.25rem 0 1.5rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem 0;
+  color: #111;
+}
+
+.pub-authors {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  color: #222;
+}
+
+.pub-authors .me {
+  font-weight: 700;
+}
+
+.pub-meta {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.pub-meta .pub-year {
+  font-weight: 600;
+}
+
+.pub-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pub-link:hover {
+  text-decoration: underline;
+}
+
+.pub-desc {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.35;
+}
