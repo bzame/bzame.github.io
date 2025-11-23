@@ -1,0 +1,82 @@
+.quotes-section {
+  background: #f7f7f7;
+  padding: 3rem 0 4rem;
+}
+
+.quotes-container {
+  max-width: 900px;
+}
+
+/* One quote per line, like pubs */
+.quote-item {
+  padding: 1.25rem 0 1.5rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.quote-item:last-child {
+  border-bottom: none;
+}
+
+/* Left vertical bar + bigger quote text */
+.quote-text {
+  border-left: 4px solid #222;
+  padding-left: 1rem;
+  font-size: 1.15rem;   /* slightly bigger */
+  line-height: 1.45;
+  color: #111;
+  margin-bottom: 0.6rem;
+}
+
+/* Meta line: left title, right authors */
+.quote-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 0.95rem;  /* smaller than quote text */
+  color: #444;
+}
+
+/* Left block: icon + title */
+.quote-source {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.quote-icon {
+  font-size: 0.95em;
+  color: #222;
+}
+
+.quote-title {
+  font-weight: 600;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Right block: author(s) */
+.quote-authors {
+  text-align: right;
+  color: #555;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Mobile wrap nicely */
+@media (max-width: 576px) {
+  .quote-meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .quote-authors {
+    text-align: left;
+    white-space: normal;
+  }
+  .quote-title {
+    white-space: normal;
+  }
+}
