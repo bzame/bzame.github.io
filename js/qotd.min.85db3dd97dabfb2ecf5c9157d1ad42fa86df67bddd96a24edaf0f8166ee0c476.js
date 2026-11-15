@@ -1,0 +1,1 @@
+(function(){var e,t,n,o,i,s=document.querySelector("[data-qotd]");if(!s)return;if(e=s.querySelectorAll(".qotd-item"),!e.length)return;for(n=new Date,o=Math.floor(Date.UTC(n.getFullYear(),n.getMonth(),n.getDate())/864e5),i=o*7919%e.length,t=0;t<e.length;t++)e[t].hidden=t!==i})()
